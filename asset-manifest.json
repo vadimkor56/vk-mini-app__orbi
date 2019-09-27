@@ -1,5 +1,5 @@
 {
-  "main.css": "/vk-mini-app__orbi/static/css/main.7a8163af.chunk.css",
+  "main.css": "/vk-mini-app__orbi/static/css/main.d82be12a.chunk.css",
   "main.js": "/vk-mini-app__orbi/static/js/main.6b4ef791.chunk.js",
   "main.js.map": "/vk-mini-app__orbi/static/js/main.6b4ef791.chunk.js.map",
   "runtime~main.js": "/vk-mini-app__orbi/static/js/runtime~main.3fa7ecb7.js",
@@ -8,9 +8,9 @@
   "static/js/2.262f9803.chunk.js": "/vk-mini-app__orbi/static/js/2.262f9803.chunk.js",
   "static/js/2.262f9803.chunk.js.map": "/vk-mini-app__orbi/static/js/2.262f9803.chunk.js.map",
   "index.html": "/vk-mini-app__orbi/index.html",
-  "precache-manifest.c63e6bfeb294ac03940c57d891d0ad75.js": "/vk-mini-app__orbi/precache-manifest.c63e6bfeb294ac03940c57d891d0ad75.js",
+  "precache-manifest.608098bae168abc0ae8bc45a74aa45e7.js": "/vk-mini-app__orbi/precache-manifest.608098bae168abc0ae8bc45a74aa45e7.js",
   "service-worker.js": "/vk-mini-app__orbi/service-worker.js",
   "static/css/2.7e1ef651.chunk.css.map": "/vk-mini-app__orbi/static/css/2.7e1ef651.chunk.css.map",
-  "static/css/main.7a8163af.chunk.css.map": "/vk-mini-app__orbi/static/css/main.7a8163af.chunk.css.map",
+  "static/css/main.d82be12a.chunk.css.map": "/vk-mini-app__orbi/static/css/main.d82be12a.chunk.css.map",
   "static/media/Questionnaire.css": "/vk-mini-app__orbi/static/media/checkicon.8779c84d.svg"
 }
