@@ -1,12 +1,13 @@
 import React from "react";
 
-export const ArrowIcon = (page) => {
+export const ArrowIcon = ({className}) => {
   return (
     <svg
       width="42"
       height="16"
       viewBox="0 0 42 16"
       fill="none"
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
     >
       <g filter="url(#filter0_d)">

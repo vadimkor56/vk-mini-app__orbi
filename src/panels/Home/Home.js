@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Panel, Button, Div, PanelHeader } from "@vkontakte/vkui";
 import "./Home.css";
-// import { InfoBlockAboutInsult } from "../../components/InfoBlockAboutInsult";
-// import connect from "@vkontakte/vk-connect";
 import { TripleDotsIcon } from "../../icons/TripleDotsIcon";
 import { ArrowIcon } from "../../icons/ArrowIcon";
 
@@ -15,16 +13,39 @@ export const Home = ({ id, go, fetchedUser }) => {
     dataTo: undefined,
     onClick: () => {
       setState({
-        mainText: "Ответьте, пожалуйста, на несколько вопросов, чтобы...",
+        mainText: (
+          <div>
+            Инсульт может коснуться каждого.
+            <br />
+            450 000 россиян перенесли инсульт за последний год.
+            <br />
+            136 000 - умерли.
+          </div>
+        ),
         page: 2,
-        buttonTitle: "Начать",
-        onClick: go
+        buttonTitle: "Дальше",
+        onClick: () => {
+          setState({
+            mainText: (
+              <div>
+                Пожалуйста, ответьте на вопросы, чтобы мы рассчитали риск
+                инсульта для Вас.
+                <br />
+                Это займёт не больше трёх минут.
+              </div>
+            ),
+            page: 3,
+            buttonTitle: "Начать",
+            onClick: go
+          });
+        }
       });
     }
   });
+
   return (
-    <Panel id={id} className="home">
-      <PanelHeader className="home__header">SLK</PanelHeader>
+    <Panel id={id}>
+      <PanelHeader className="home__header">ОРБИ</PanelHeader>
       <Div className="home">
         <Div className="home__header">
           <h1>{`Привет, ${fetchedUser ? fetchedUser.first_name : "друг"}!`}</h1>
@@ -51,36 +72,6 @@ export const Home = ({ id, go, fetchedUser }) => {
           </Button>
         </Div>
       </Div>
-
-      {/*<Group title="ОБЩАЯ ИНФОРМАЦИЯ">*/}
-      {/*  <Div>*/}
-      {/*    <InfoBlockAboutInsult />*/}
-      {/*    <Div>*/}
-      {/*      <Button size="xl" level="2" onClick={go} data-to="info">*/}
-      {/*        Узнать больше*/}
-      {/*      </Button>*/}
-      {/*    </Div>*/}
-      {/*    <Div>*/}
-      {/*      <Button size="xl" level="2" onClick={go} data-to="questionnaire">*/}
-      {/*        Начать*/}
-      {/*      </Button>*/}
-      {/*    </Div>*/}
-      {/*    <Div>*/}
-      {/*      <Button*/}
-      {/*        size="xl"*/}
-      {/*        level="2"*/}
-      {/*        onClick={() =>*/}
-      {/*          connect.send("VKWebAppShare", {*/}
-      {/*            link: "https://vk.com/app7144030"*/}
-      {/*          })*/}
-      {/*        }*/}
-      {/*        data-to="questionnaire"*/}
-      {/*      >*/}
-      {/*        Поделиться*/}
-      {/*      </Button>*/}
-      {/*    </Div>*/}
-      {/*  </Div>*/}
-      {/*</Group>*/}
     </Panel>
   );
 };

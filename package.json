@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://vadimkor56.github.io/vk-mini-app__Test/",
+  "homepage": "https://vadimkor56.github.io/vk-mini-app__orbi/",
   "scripts": {
     "start": "cross-env PORT=10888 react-scripts start",
     "build": "react-scripts build",
@@ -29,7 +29,8 @@
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "react-spinners": "^0.6.1"
   },
   "browserslist": [
     ">0.2%",
