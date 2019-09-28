@@ -1,16 +1,16 @@
 {
-  "main.css": "/vk-mini-app__orbi/static/css/main.ae5e45a0.chunk.css",
-  "main.js": "/vk-mini-app__orbi/static/js/main.2d2567a0.chunk.js",
-  "main.js.map": "/vk-mini-app__orbi/static/js/main.2d2567a0.chunk.js.map",
+  "main.css": "/vk-mini-app__orbi/static/css/main.2bcb3dd1.chunk.css",
+  "main.js": "/vk-mini-app__orbi/static/js/main.6c1c5c1a.chunk.js",
+  "main.js.map": "/vk-mini-app__orbi/static/js/main.6c1c5c1a.chunk.js.map",
   "runtime~main.js": "/vk-mini-app__orbi/static/js/runtime~main.3fa7ecb7.js",
   "runtime~main.js.map": "/vk-mini-app__orbi/static/js/runtime~main.3fa7ecb7.js.map",
   "static/css/2.7e1ef651.chunk.css": "/vk-mini-app__orbi/static/css/2.7e1ef651.chunk.css",
   "static/js/2.02b655e2.chunk.js": "/vk-mini-app__orbi/static/js/2.02b655e2.chunk.js",
   "static/js/2.02b655e2.chunk.js.map": "/vk-mini-app__orbi/static/js/2.02b655e2.chunk.js.map",
   "index.html": "/vk-mini-app__orbi/index.html",
-  "precache-manifest.14ec3dd2aaeca426c11eec79a8b6665f.js": "/vk-mini-app__orbi/precache-manifest.14ec3dd2aaeca426c11eec79a8b6665f.js",
+  "precache-manifest.b2daa8cb1b8a36287ea6bf07228cdccd.js": "/vk-mini-app__orbi/precache-manifest.b2daa8cb1b8a36287ea6bf07228cdccd.js",
   "service-worker.js": "/vk-mini-app__orbi/service-worker.js",
   "static/css/2.7e1ef651.chunk.css.map": "/vk-mini-app__orbi/static/css/2.7e1ef651.chunk.css.map",
-  "static/css/main.ae5e45a0.chunk.css.map": "/vk-mini-app__orbi/static/css/main.ae5e45a0.chunk.css.map",
+  "static/css/main.2bcb3dd1.chunk.css.map": "/vk-mini-app__orbi/static/css/main.2bcb3dd1.chunk.css.map",
   "static/media/Questionnaire.css": "/vk-mini-app__orbi/static/media/checkicon.710340ba.svg"
 }
