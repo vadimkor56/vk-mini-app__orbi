@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "cb2a7d01461c4e104384",
-    "url": "/vk-mini-app__orbi/static/css/main.9e43f989.chunk.css"
+    "revision": "7e1b8cc35c36187ac096",
+    "url": "/vk-mini-app__orbi/static/css/main.1369e642.chunk.css"
   },
   {
-    "revision": "cb2a7d01461c4e104384",
-    "url": "/vk-mini-app__orbi/static/js/main.88bbb468.chunk.js"
+    "revision": "7e1b8cc35c36187ac096",
+    "url": "/vk-mini-app__orbi/static/js/main.50f06cd3.chunk.js"
   },
   {
     "revision": "81cbff8929972741906c",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/vk-mini-app__orbi/static/media/checkicon.710340ba.svg"
   },
   {
-    "revision": "5e85deb61c38b8f4e80b51f0058e262b",
+    "revision": "5b50b8b8965f863d9ca67c5a1c44ad26",
     "url": "/vk-mini-app__orbi/index.html"
   }
 ];
