@@ -231,152 +231,147 @@ export class MainPage extends React.Component {
                   <Div
                     className="main-page__recommended-challenge"
                     style={{ backgroundColor: "#e3b65b" }}
-                  >
-                    <div
-                      className="main-page__recommended-challenge-title"
-                      onClick={() => {
-                        setModal(
-                          <ModalRoot activeModal="subscribe">
-                            <ModalCard
-                              id="subscribe"
-                              onClose={() => setModal(null)}
-                              icon={<Icon56MoneyTransferOutline />}
-                              title="Ежемесячное пожертвование"
-                              caption={
-                                <Div
-                                  style={{
-                                    display: "flex",
-                                    justifyContent: "space-between"
-                                  }}
-                                >
-                                  <Button
-                                    level={"outline"}
-                                    style={{ margin: "0 3px" }}
-                                    className="button-for-payment"
-                                    size="xl"
-                                    onClick={e => {
-                                      const buttons = document.getElementsByClassName(
-                                        "button-for-payment"
-                                      );
+                    onClick={() => {
+                      setModal(
+                        <ModalRoot activeModal="subscribe">
+                          <ModalCard
+                            id="subscribe"
+                            onClose={() => setModal(null)}
+                            icon={<Icon56MoneyTransferOutline />}
+                            title="Ежемесячное пожертвование"
+                            caption={
+                              <Div
+                                style={{
+                                  display: "flex",
+                                  justifyContent: "space-between"
+                                }}
+                              >
+                                <Button
+                                  level={"outline"}
+                                  style={{ margin: "0 3px" }}
+                                  className="button-for-payment"
+                                  size="xl"
+                                  onClick={e => {
+                                    const buttons = document.getElementsByClassName(
+                                      "button-for-payment"
+                                    );
 
-                                      Array.from(buttons).forEach(button => {
-                                        button.style.backgroundColor = "white";
-                                        button.style.color =
-                                          "rgb(82, 139, 204)";
-                                      });
-
-                                      this.changeButtonTheme(e.currentTarget);
-
-                                      this.setState({
-                                        modalInputValue: 100
-                                      });
-                                    }}
-                                  >
-                                    100
-                                  </Button>
-                                  <Button
-                                    size="xl"
-                                    className="button-for-payment"
-                                    style={{ margin: "0 3px" }}
-                                    level={"outline"}
-                                    onClick={e => {
-                                      const buttons = document.getElementsByClassName(
-                                        "button-for-payment"
-                                      );
-
-                                      Array.from(buttons).forEach(button => {
-                                        button.style.backgroundColor = "white";
-                                        button.style.color =
-                                          "rgb(82, 139, 204)";
-                                      });
-
-                                      this.changeButtonTheme(e.currentTarget);
-
-                                      this.setState({
-                                        modalInputValue: 500
-                                      });
-                                    }}
-                                  >
-                                    500
-                                  </Button>
-                                  <Button
-                                    size="xl"
-                                    style={{ margin: "0 3px" }}
-                                    className="button-for-payment"
-                                    level={"outline"}
-                                    onClick={e => {
-                                      const buttons = document.getElementsByClassName(
-                                        "button-for-payment"
-                                      );
-
-                                      Array.from(buttons).forEach(button => {
-                                        button.style.backgroundColor = "white";
-                                        button.style.color =
-                                          "rgb(82, 139, 204)";
-                                      });
-
-                                      this.changeButtonTheme(e.currentTarget);
-
-                                      this.setState({
-                                        modalInputValue: 1000
-                                      });
-                                    }}
-                                  >
-                                    1000
-                                  </Button>
-                                </Div>
-                              }
-                              actions={[
-                                {
-                                  title: "Оформить",
-                                  type: "primary",
-                                  action: () => {
-                                    const sum = this.state.modalInputValue;
-
-                                    if (!sum) {
-                                      return;
-                                    }
-
-                                    setModal(null);
-                                    this.setState({
-                                      modalInputValue: ""
+                                    Array.from(buttons).forEach(button => {
+                                      button.style.backgroundColor = "white";
+                                      button.style.color = "rgb(82, 139, 204)";
                                     });
 
-                                    const objectToPost = {
-                                      user_id: this.state.userId,
-                                      sum: parseInt(sum),
-                                      own: true,
-                                      subscription: true
-                                    };
+                                    this.changeButtonTheme(e.currentTarget);
 
-                                    const query = Object.keys(objectToPost)
-                                      .map(function(k) {
-                                        return (
-                                          encodeURIComponent(k) +
-                                          "=" +
-                                          encodeURIComponent(objectToPost[k])
-                                        );
-                                      })
-                                      .join("&");
+                                    this.setState({
+                                      modalInputValue: 100
+                                    });
+                                  }}
+                                >
+                                  100
+                                </Button>
+                                <Button
+                                  size="xl"
+                                  className="button-for-payment"
+                                  style={{ margin: "0 3px" }}
+                                  level={"outline"}
+                                  onClick={e => {
+                                    const buttons = document.getElementsByClassName(
+                                      "button-for-payment"
+                                    );
 
-                                    fetch(
-                                      `https://niksavilov.pythonanywhere.com/api/donations/new/?${query}`
-                                    )
-                                      .then(response => response.clone().json())
-                                      .then(res => {
-                                        this.setState({
-                                          money: sum,
-                                          isSubscribed: true
-                                        });
-                                      });
+                                    Array.from(buttons).forEach(button => {
+                                      button.style.backgroundColor = "white";
+                                      button.style.color = "rgb(82, 139, 204)";
+                                    });
+
+                                    this.changeButtonTheme(e.currentTarget);
+
+                                    this.setState({
+                                      modalInputValue: 500
+                                    });
+                                  }}
+                                >
+                                  500
+                                </Button>
+                                <Button
+                                  size="xl"
+                                  style={{ margin: "0 3px" }}
+                                  className="button-for-payment"
+                                  level={"outline"}
+                                  onClick={e => {
+                                    const buttons = document.getElementsByClassName(
+                                      "button-for-payment"
+                                    );
+
+                                    Array.from(buttons).forEach(button => {
+                                      button.style.backgroundColor = "white";
+                                      button.style.color = "rgb(82, 139, 204)";
+                                    });
+
+                                    this.changeButtonTheme(e.currentTarget);
+
+                                    this.setState({
+                                      modalInputValue: 1000
+                                    });
+                                  }}
+                                >
+                                  1000
+                                </Button>
+                              </Div>
+                            }
+                            actions={[
+                              {
+                                title: "Оформить",
+                                type: "primary",
+                                action: () => {
+                                  const sum = this.state.modalInputValue;
+
+                                  if (!sum) {
+                                    return;
                                   }
+
+                                  setModal(null);
+                                  this.setState({
+                                    modalInputValue: ""
+                                  });
+
+                                  const objectToPost = {
+                                    user_id: this.state.userId,
+                                    sum: parseInt(sum),
+                                    own: true,
+                                    subscription: true
+                                  };
+
+                                  const query = Object.keys(objectToPost)
+                                    .map(function(k) {
+                                      return (
+                                        encodeURIComponent(k) +
+                                        "=" +
+                                        encodeURIComponent(objectToPost[k])
+                                      );
+                                    })
+                                    .join("&");
+
+                                  fetch(
+                                    `https://niksavilov.pythonanywhere.com/api/donations/new/?${query}`
+                                  )
+                                    .then(response => response.clone().json())
+                                    .then(res => {
+                                      this.setState({
+                                        money: sum,
+                                        isSubscribed: true
+                                      });
+                                    });
                                 }
-                              ]}
-                            />
-                          </ModalRoot>
-                        );
-                      }}
-                    >
+                              }
+                            ]}
+                          />
+                        </ModalRoot>
+                      );
+                    }}
+                  >
+                    <div className="main-page__recommended-challenge-title">
                       Оформить пожертвование
                     </div>
                   </Div>
