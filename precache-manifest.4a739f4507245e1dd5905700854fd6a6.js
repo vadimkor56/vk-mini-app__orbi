@@ -1,30 +1,30 @@
 self.__precacheManifest = [
   {
-    "revision": "bc4feb6e608dc7216b40",
-    "url": "/vk-mini-app__orbi/static/css/main.4a65e271.chunk.css"
+    "revision": "ceb18d7f8e4f3cacc8d3",
+    "url": "/vk-mini-app__orbi/static/css/main.12530048.chunk.css"
   },
   {
-    "revision": "bc4feb6e608dc7216b40",
-    "url": "/vk-mini-app__orbi/static/js/main.e87acc1f.chunk.js"
+    "revision": "ceb18d7f8e4f3cacc8d3",
+    "url": "/vk-mini-app__orbi/static/js/main.b0fe540f.chunk.js"
   },
   {
     "revision": "81cbff8929972741906c",
     "url": "/vk-mini-app__orbi/static/js/runtime~main.3fa7ecb7.js"
   },
   {
-    "revision": "d0807518b760b74a35d0",
+    "revision": "bebd9935a8325de574e0",
     "url": "/vk-mini-app__orbi/static/css/2.7e1ef651.chunk.css"
   },
   {
-    "revision": "d0807518b760b74a35d0",
-    "url": "/vk-mini-app__orbi/static/js/2.262f9803.chunk.js"
+    "revision": "bebd9935a8325de574e0",
+    "url": "/vk-mini-app__orbi/static/js/2.f9525f5e.chunk.js"
   },
   {
     "revision": "710340baf49e0a2bf06b3464c60e0db5",
     "url": "/vk-mini-app__orbi/static/media/checkicon.710340ba.svg"
   },
   {
-    "revision": "6f6f6098438faa7d9e650e76cb98ce81",
+    "revision": "0ca420404b303cff103fa5d749f38210",
     "url": "/vk-mini-app__orbi/index.html"
   }
 ];
