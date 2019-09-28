@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/vk-mini-app__orbi/precache-manifest.88c498718a64e1e25936840c036ffdcc.js"
+  "/vk-mini-app__orbi/precache-manifest.d02890d0cd71063b1d987e5ea7b60c01.js"
 );
 
 workbox.clientsClaim();
