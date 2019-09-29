@@ -363,7 +363,7 @@ export class Questionnaire extends React.Component {
 
                     this.setState({ isLoading: true });
 
-                    await new Promise(resolve => setTimeout(resolve, 1500));
+                    await new Promise(resolve => setTimeout(resolve, 3000));
 
                     await fetch(
                       `https://niksavilov.pythonanywhere.com/api/customers/new/?${query}`
@@ -397,7 +397,10 @@ export class Questionnaire extends React.Component {
         ) : (
           <Div className="loading">
             <Div className="loading__header">
-              <h1>Мы подготавливаем рекомендации для Вас</h1>
+              <h1>
+                Мы помогаем Вам заводить и поддерживать привычки, снижающие риск
+                инсульта.
+              </h1>
             </Div>
 
             <Div className="loading__main">
