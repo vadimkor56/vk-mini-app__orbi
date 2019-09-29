@@ -60,7 +60,7 @@ export class App extends React.Component {
       }
     });
     connect.send("VKWebAppGetUserInfo", {});
-    // this.setState({ activePanel: "home" });
+    this.setState({ activePanel: "home" });
   }
 
   go = e => {

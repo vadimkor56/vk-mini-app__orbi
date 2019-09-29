@@ -113,7 +113,11 @@ export class MainPage extends React.Component {
               >{`${this.state.money}₽`}</Div>
               <Div className="main-page__diagram-wrapper">
                 <Div className="main-page__diagram" style={{ borderColor }}>
-                  {`${parseFloat(percentage).toFixed(1)}%`}
+                  {`${
+                    parseFloat(percentage).toFixed(1) < 0
+                      ? 0.0
+                      : parseFloat(percentage).toFixed(1)
+                  }%`}
                   <br />
                   <Div className="main-page__diagram-dynamic">
                     <ArrowUpIcon

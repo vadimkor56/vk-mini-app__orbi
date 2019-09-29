@@ -282,10 +282,23 @@ export class Questionnaire extends React.Component {
                 <Input
                   type="number"
                   placeholder={currentQuestion.input.placeholder}
-                  value={this.state.inputValue}
+                  value={this.state.inputValue || ""}
                   alignment="center"
                   onChange={event => {
-                    const value = event.currentTarget.value;
+                    const initVal = event.currentTarget.value;
+
+                    let value = parseInt(initVal.replace(/^\D+/g, "")) || "0";
+
+                    if (
+                      value.toString()[0] === "0" &&
+                      value.toString().length > 1
+                    ) {
+                      value = value
+                        .toString()
+                        .split("")
+                        .slice(1)
+                        .join("");
+                    }
 
                     answers[questionNumber] = {
                       id: currentQuestionId,
