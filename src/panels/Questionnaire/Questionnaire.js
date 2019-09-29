@@ -287,7 +287,11 @@ export class Questionnaire extends React.Component {
                   onChange={event => {
                     const initVal = event.currentTarget.value;
 
-                    let value = parseInt(initVal.replace(/^\D+/g, "")) || "0";
+                    let value = parseInt(initVal.replace(/\D+/g, "")) || "0";
+
+                    if (value > 1000) {
+                      value = value % 1000;
+                    }
 
                     if (
                       value.toString()[0] === "0" &&
