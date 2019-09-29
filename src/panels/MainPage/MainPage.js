@@ -14,6 +14,7 @@ import Icon56MoneyTransferOutline from "@vkontakte/icons/dist/56/money_transfer_
 import Textarea from "@vkontakte/vkui/dist/components/Textarea/Textarea";
 import Button from "@vkontakte/vkui/dist/components/Button/Button";
 import { InfoIcon } from "../../icons/InfoIcon";
+import { RocketIcon } from "../../icons/RocketIcon";
 
 export class MainPage extends React.Component {
   constructor(props) {
@@ -154,6 +155,44 @@ export class MainPage extends React.Component {
                         <Div
                           className="main-page__challenges-challenge-wrapper"
                           key={key}
+                          onClick={() => {
+                            setModal(
+                              <ModalRoot activeModal="info-about-challenge">
+                                <ModalCard
+                                  id="info-about-challenge"
+                                  onClose={() => setModal(null)}
+                                  icon={<RocketIcon />}
+                                  title={challenge.title}
+                                  caption={
+                                    <div>
+                                      <div
+                                        style={{
+                                          fontSize: "16px",
+                                          fontWeight: "900"
+                                        }}
+                                      >
+                                        {challenge.daysLeft || challenge.days}{" "}
+                                        дней осталось
+                                      </div>
+                                      <br />
+                                      {challenge.description}
+                                    </div>
+                                  }
+                                  actions={[
+                                    {
+                                      title: "Поделиться",
+                                      type: "primary",
+                                      action: () => {
+                                        connect.send("VKWebAppShare", {
+                                          link: "vk.com/app5727453_-49894129"
+                                        });
+                                      }
+                                    }
+                                  ]}
+                                />
+                              </ModalRoot>
+                            );
+                          }}
                         >
                           <Div
                             className="main-page__challenges-challenge"
@@ -415,7 +454,7 @@ export class MainPage extends React.Component {
                                   }
                                   actions={[
                                     {
-                                      title: "Принять и поделиться",
+                                      title: "Принять",
                                       type: "primary",
                                       action: () => {
                                         setModal(null);
@@ -453,9 +492,6 @@ export class MainPage extends React.Component {
                                         ).then(response =>
                                           response.clone().json()
                                         );
-                                        connect.send("VKWebAppShare", {
-                                          link: "vk.com/app5727453_-49894129"
-                                        });
                                       }
                                     }
                                   ]}

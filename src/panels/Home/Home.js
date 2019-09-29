@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Panel, Button, Div, PanelHeader } from "@vkontakte/vkui";
 import "./Home.css";
-import { TripleDotsIcon } from "../../icons/TripleDotsIcon";
 import { ArrowIcon } from "../../icons/ArrowIcon";
 
 export const Home = ({ id, go, fetchedUser }) => {
