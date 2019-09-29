@@ -187,6 +187,7 @@ export class MainPage extends React.Component {
                                         title: "Поделиться",
                                         type: "primary",
                                         action: () => {
+                                          setModal(null);
                                           connect.send("VKWebAppShare", {
                                             link: "vk.com/app5727453_-49894129"
                                           });
