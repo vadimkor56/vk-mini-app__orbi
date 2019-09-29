@@ -54,9 +54,9 @@ export const Home = ({ id, go, fetchedUser }) => {
 
         <Div className="home__main">
           <div>{state.mainText}</div>
-          <div>
-            <TripleDotsIcon page={state.page} />
-          </div>
+          {/*<div>*/}
+          {/*  <TripleDotsIcon page={state.page} />*/}
+          {/*</div>*/}
         </Div>
 
         <Div className="home__control">
@@ -67,7 +67,9 @@ export const Home = ({ id, go, fetchedUser }) => {
             data-to="questionnaire"
             className="home__control-button"
           >
-            <div style={{ marginBottom: "10px" }}>{state.buttonTitle}</div>
+            <div style={{ marginBottom: "10px", color: "white" }}>
+              {state.buttonTitle}
+            </div>
             <ArrowIcon />
           </Button>
         </Div>
