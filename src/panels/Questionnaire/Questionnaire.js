@@ -119,7 +119,7 @@ const questions = [
 export const maxRiskValue = 15.5;
 
 export const getProperPercentage = value => {
-  return (value * 0.5).toFixed(2);
+  return (value * 0.3).toFixed(2);
 };
 
 let answers = [];
@@ -212,8 +212,8 @@ export class Questionnaire extends React.Component {
       questionNumber !== questions.length - 1 ? "Дальше" : "Закончить";
     const currentQuestionId = currentQuestion.id;
 
-    const borderColor = `rgb(${percentage / 0.51}%, ${100 -
-      percentage / 0.51}%, 65%)`;
+    const borderColor = `rgb(${percentage / 0.31}%, ${100 -
+      percentage / 0.31}%, 65%)`;
 
     return (
       <Panel id={this.props.id}>
