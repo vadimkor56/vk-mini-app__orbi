@@ -175,8 +175,7 @@ export class MainPage extends React.Component {
                                             fontWeight: "900"
                                           }}
                                         >
-                                          {challenge.daysLeft || challenge.days}{" "}
-                                          дней осталось
+                                          {challenge.days} дней осталось
                                         </div>
                                         <br />
                                         {challenge.description}
