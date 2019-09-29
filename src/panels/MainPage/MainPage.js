@@ -127,8 +127,8 @@ export class MainPage extends React.Component {
                         "main-page__diagram-dynamic-icon-rotated"}`}
                     />
                     {`${parseFloat(
-                      Math.abs(this.state.lastDiffRiskValue).toFixed(2)
-                    )}%`}
+                      Math.abs(this.state.lastDiffRiskValue).toString()
+                    ).toFixed(2)}%`}
                   </Div>
                 </Div>
               </Div>
@@ -259,7 +259,7 @@ export class MainPage extends React.Component {
                         </Div>
                       );
                     })
-                  : "У Вас нет активных челенджей, можете добавить их из списка рекомендуемых."}
+                  : "Добавьте челендж из списка рекомендуемых. Каждый день, после выполнения привычки, ставьте галочку в приложении."}
               </Div>
             </Div>
 
