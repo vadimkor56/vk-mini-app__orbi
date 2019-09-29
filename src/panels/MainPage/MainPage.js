@@ -155,48 +155,48 @@ export class MainPage extends React.Component {
                         <Div
                           className="main-page__challenges-challenge-wrapper"
                           key={key}
-                          onClick={() => {
-                            setModal(
-                              <ModalRoot activeModal="info-about-challenge">
-                                <ModalCard
-                                  id="info-about-challenge"
-                                  onClose={() => setModal(null)}
-                                  icon={<RocketIcon />}
-                                  title={challenge.title}
-                                  caption={
-                                    <div>
-                                      <div
-                                        style={{
-                                          fontSize: "16px",
-                                          fontWeight: "900"
-                                        }}
-                                      >
-                                        {challenge.daysLeft || challenge.days}{" "}
-                                        дней осталось
-                                      </div>
-                                      <br />
-                                      {challenge.description}
-                                    </div>
-                                  }
-                                  actions={[
-                                    {
-                                      title: "Поделиться",
-                                      type: "primary",
-                                      action: () => {
-                                        connect.send("VKWebAppShare", {
-                                          link: "vk.com/app5727453_-49894129"
-                                        });
-                                      }
-                                    }
-                                  ]}
-                                />
-                              </ModalRoot>
-                            );
-                          }}
                         >
                           <Div
                             className="main-page__challenges-challenge"
                             style={{ opacity: challenge.completed ? 0.75 : 1 }}
+                            onClick={() => {
+                              setModal(
+                                <ModalRoot activeModal="info-about-challenge">
+                                  <ModalCard
+                                    id="info-about-challenge"
+                                    onClose={() => setModal(null)}
+                                    icon={<RocketIcon />}
+                                    title={challenge.title}
+                                    caption={
+                                      <div>
+                                        <div
+                                          style={{
+                                            fontSize: "16px",
+                                            fontWeight: "900"
+                                          }}
+                                        >
+                                          {challenge.daysLeft || challenge.days}{" "}
+                                          дней осталось
+                                        </div>
+                                        <br />
+                                        {challenge.description}
+                                      </div>
+                                    }
+                                    actions={[
+                                      {
+                                        title: "Поделиться",
+                                        type: "primary",
+                                        action: () => {
+                                          connect.send("VKWebAppShare", {
+                                            link: "vk.com/app5727453_-49894129"
+                                          });
+                                        }
+                                      }
+                                    ]}
+                                  />
+                                </ModalRoot>
+                              );
+                            }}
                           >
                             <div className="main-page__challenges-challenge-title">
                               {challenge.title}

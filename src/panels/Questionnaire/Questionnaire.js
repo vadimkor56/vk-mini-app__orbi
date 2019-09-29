@@ -389,7 +389,9 @@ export class Questionnaire extends React.Component {
                 data-to="main"
                 className="questionnaire__control-button"
               >
-                <div style={{ marginBottom: "10px" }}>{buttonTitle}</div>
+                <div style={{ marginBottom: "10px", color: "white" }}>
+                  {buttonTitle}
+                </div>
                 <ArrowIcon />
               </Button>
             </Div>
