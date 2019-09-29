@@ -15,6 +15,7 @@ import Textarea from "@vkontakte/vkui/dist/components/Textarea/Textarea";
 import Button from "@vkontakte/vkui/dist/components/Button/Button";
 import { InfoIcon } from "../../icons/InfoIcon";
 import { RocketIcon } from "../../icons/RocketIcon";
+import { HeartIcon } from "../../icons/HeartIcon";
 
 export class MainPage extends React.Component {
   constructor(props) {
@@ -112,7 +113,22 @@ export class MainPage extends React.Component {
                   );
                 }}
               >{`${this.state.money}₽`}</Div>
-              <Div className="main-page__diagram-wrapper">
+              <Div
+                className="main-page__diagram-wrapper"
+                onClick={() => {
+                  setModal(
+                    <ModalRoot activeModal="info-about-percentage">
+                      <ModalCard
+                        id="info-about-percentage"
+                        onClose={() => setModal(null)}
+                        icon={<HeartIcon />}
+                        title="5-летний риск"
+                        caption="Риск расчитывается на основе теста от Национального института инсульта и прикладных нейронаук."
+                      />
+                    </ModalRoot>
+                  );
+                }}
+              >
                 <Div className="main-page__diagram" style={{ borderColor }}>
                   {`${
                     parseFloat(percentage).toFixed(1) < 0
